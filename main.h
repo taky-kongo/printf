@@ -15,11 +15,11 @@
 typedef struct str
 {
 	char *ch;
-	(*f)(valist);
+	int (*f)(va_list);
 } list_str;
 
 int _printf(const char *format, ...);
-int _putchar(int c);
+int _putchar(char c);
 int print_char(va_list args);
 int print_string(va_list args);
 int (*get_func(const char *format))(va_list);

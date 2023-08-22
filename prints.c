@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -21,7 +23,7 @@ int print_char(va_list args)
 	char c;
 	int value;
 
-	c = va_args(args, int);
+	c = va_arg(args, int);
 	value = _putchar(c);
 	if (value == -1)
 		return (-1);
