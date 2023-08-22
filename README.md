@@ -1,8 +1,8 @@
-## The goal of this project is to reproduce the printf function from the standard library in C.
+# The goal of this project is to reproduce the printf function from the standard library in C.
 
-# Task 1:
+## Task 1:
 
-Write a function that produces output according to a format.
+####Write a function that produces output according to a format.
 
 	* Prototype: int _printf(const char *format, ...);
 	* Returns: the number of characters printed (excluding the null byte used to end output to strings)
