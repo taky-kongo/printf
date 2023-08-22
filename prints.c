@@ -9,3 +9,21 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+/**
+ * print_char - a function to prints the chars
+ * @args: the arguments
+ *
+ * Return: 1 if success or -1
+ */
+int print_char(va_list args)
+{
+	char c;
+	int value;
+
+	c = va_args(args, int);
+	value = _putchar(c);
+	if (value == -1)
+		return (-1);
+	return (1);
+}
