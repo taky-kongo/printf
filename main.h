@@ -20,6 +20,7 @@ typedef struct str
 
 int _printf(const char *format, ...);
 int _putchar(int c);
+int print_char(va_list args)
 int (*get_func(const char *format))(va_list);
 
 #endif
