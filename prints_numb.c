@@ -14,7 +14,7 @@ int  print_number(unsigned int n)
 	num = n;
 	if (num / 10)
 		print_number(num / 10);
-	
+
 	val = _putchar('0' + num % 10);
 	if (val == -1)
 	{
