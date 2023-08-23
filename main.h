@@ -22,6 +22,7 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list args);
 int print_string(va_list args);
+int  print_number(unsigned int n);
 int (*get_func(const char *format))(va_list);
 
 #endif
