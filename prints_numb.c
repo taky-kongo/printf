@@ -22,3 +22,21 @@ int  print_number(unsigned int n)
 	}
 	return (val);
 }
+
+/**
+* countDigits - count how many digits the number is
+* @num: the number
+*
+* Return: the count
+*/
+int countDigits(unsigned int num)
+{
+	int count = 0;
+
+	while (num > 0)
+	{
+		count++;
+		num /= 10;
+	}
+	return (count);
+}
