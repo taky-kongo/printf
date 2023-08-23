@@ -55,3 +55,50 @@ int print_string(va_list args)
 	}
 	return (count);
 }
+
+/**
+ * print_decim - prints decimal numbers, positive and negative
+ * @args: the number to print
+ *
+ * Return: count
+ */
+int print_decim(va_list args)
+{
+	int num = va_arg(args, int);
+	int count = 0;
+	int val;
+	unsigned int un;
+
+	if (num < 0)
+	{
+		val = _putchar('-');
+		if (val == -1)
+		{
+			return (-1);
+		}
+		count += 1;
+		un = -num;
+	}
+	else if (num == 0)
+	{
+		val = _putchar('0');
+		if (val == 1)
+			return (1);
+		else
+			return (-1);
+	}
+	else
+	{
+		un = num;
+	}
+
+	val = print_number(un);
+	if (val == 1)
+	{
+		count += countDigits(un);
+	}
+	else
+		count = -1;
+
+	return (count);
+}
